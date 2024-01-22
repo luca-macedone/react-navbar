@@ -1,0 +1,17 @@
+:root {
+  --ms-primary: #3892c2;
+}
+
+.ms-text-primary {
+  color: var(--ms-primary);
+}
+
+.ms-link-btn {
+  background-color: transparent !important;
+  transition: all ease-in-out 200ms;
+}
+
+.ms-link-btn:hover {
+  background-color: rgba(109, 123, 131, 0.1) !important;
+  color: var(--ms-primary) !important;
+}
