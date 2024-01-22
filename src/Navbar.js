@@ -22,7 +22,7 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsVisible(!isVisible);
-    console.log(isVisible);
+    // console.log(isVisible);
   };
 
   useEffect(() => {
@@ -39,7 +39,10 @@ const Navbar = () => {
         className="shadow py-3"
         ref={navbar}
       >
-        <div className="container d-flex align-items-center justify-content-between flex-wrap">
+        <nav
+          className="container d-flex align-items-center justify-content-between flex-wrap"
+          id="navbar"
+        >
           <div className="d-inline-flex align-items-center gap-2 fs-5 fw-semibold">
             <img
               src="https://navbar-tutorial.netlify.app/static/media/logo.7d6aa1c2.svg"
@@ -52,7 +55,7 @@ const Navbar = () => {
 
           {!isMobile && (
             <>
-              <Links></Links>
+              <Links isMobileView={isMobile}></Links>
 
               <Socials></Socials>
             </>
@@ -75,12 +78,15 @@ const Navbar = () => {
             </>
           )}
           {isVisible && isMobile && (
-            <div className="w-100">
-              <Links></Links>
+            <div
+              className="w-100"
+              id="dropdown-menu"
+            >
+              <Links isMobileView={isMobile}></Links>
               {/* <Socials></Socials> */}
             </div>
           )}
-        </div>
+        </nav>
       </div>
     </>
   );

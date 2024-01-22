@@ -15,3 +15,15 @@
   background-color: rgba(109, 123, 131, 0.1) !important;
   color: var(--ms-primary) !important;
 }
+
+.ms-fs-7 {
+  font-size: 0.75rem;
+}
+
+#navbar {
+  transition: all ease-in-out 200ms;
+}
+
+#dropdown-menu {
+  transition: all ease-in-out 200ms;
+}

@@ -3,7 +3,6 @@ import {
   faLinkedinIn,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Socials = () => {
